@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hungama Events | Summer Vibes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fffbe6;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      animation: fadeInDown 1.5s ease-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 1px 1px 4px #000;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+      text-shadow: 1px 1px 2px #000;
+    }
+    nav {
+      background: #56c596;
+      text-align: center;
+      padding: 0.7rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffb703;
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      animation: fadeIn 1.5s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .event {
+      border-left: 6px solid #56c596;
+      background: #ffffff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      background-image: url('https://www.transparenttextures.com/patterns/white-carbon.png');
+    }
+    .event:hover {
+      transform: scale(1.02);
+    }
+    .event h2 {
+      margin-top: 0;
+      color: #0077b6;
+    }
+    .event img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-top: 0.7rem;
+      border-radius: 6px;
+    }
+    #about, #socials {
+      background: #e0f7fa;
+      border-radius: 10px;
+    }
+    footer {
+      background: #56c596;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 0.5rem 1rem;
+      color: #05668d;
+      font-weight: bold;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .socials a:hover {
+      transform: scale(1.1);
+      color: #ffb703;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hungama Events</h1>
+    <p>🌴 Moj, Masti & Party 🎉</p>
+  </header>
+
+  <nav>
+    <a href="#events">Events</a>
+    <a href="#about">About Us</a>
+    <a href="#socials">Socials</a>
+  </nav>
+
+  <section id="events">
+    <h2>Upcoming Events</h2>
+
+    <div class="event">
+      <h2>Beach Cleanup Drive 🌊</h2>
+      <p><strong>Date:</strong> July 6, 2025</p>
+      <p><strong>Location:</strong> Karachi</p>
+      <p>Rise & shine with a cause! Let’s clean the coast and catch some waves 🌊 — Free breakfast & transport provided!</p>
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beach Cleanup">
+    </div>
+
+    <div class="event">
+      <h2>Women's Only Kitty Party 💃☕</h2>
+      <p><strong>Date:</strong> TBA</p>
+      <p><strong>Location:</strong> Karachi</p>
+      <p>Music, tea and a whole lotta feminine energy! 🎶☕💅</p>
+      <img src="https://images.unsplash.com/photo-1582735689090-b608d4efcc48?auto=format&fit=crop&w=800&q=80" alt="Kitty Party">
+    </div>
+
+    <div class="event">
+      <h2>Movie Night 🍿✨</h2>
+      <p><strong>Date:</strong> TBA</p>
+      <p><strong>Location:</strong> Karachi</p>
+      <p>Star gazing & screen time? We've got the perfect chill evening lined up! 🌌🎬 Snacks provided.</p>
+      <img src="https://images.unsplash.com/photo-1533587851505-7f8c868f1e4b?auto=format&fit=crop&w=800&q=80" alt="Movie Night">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>🌞 Hungama Events was created one lazy summer afternoon when two university students were stuck at home with nowhere fun to go. Weekends were a total snoozefest, thanks to the entertainment sector in Pakistan that barely exists. But guess what?🎉 .</p>
+    <p>Hungama Events is here to flip the script and turn your dull days into unforgettable adventures. We aim to team up with the community to create fun, safe and unforgettable memories that you’ll remember forever! So grab your sunnies, rally your gang, and let the party begin! 🌈🎈🕺💃 </p>
+  </section>
+
+  <section id="socials" class="socials">
+    <h2>Follow Us</h2>
+    <a href="https://www.instagram.com/hungama.events" target="_blank">📸 Instagram</a>
+    <a href="https://chat.whatsapp.com/CGBOcarXzCyGmi8cfK4U2E" target="_blank">💬 WhatsApp Group</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hungama Events | The name says it all;) </p>
+  </footer>
+
+</body>
+</html>
